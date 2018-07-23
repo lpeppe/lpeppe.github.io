@@ -121,7 +121,10 @@ gulp.task('js', ['js:minify']);
 
 //Optimize images
 gulp.task('imgmin', () => {
-  gulp.src('*.jpg')
+  gulp.src([
+    './images/*.jpg',
+    './images/*.png'
+  ])
     .pipe(imagemin())
     .pipe(gulp.dest('img'))
 })
@@ -142,6 +145,6 @@ gulp.task('browserSync', function () {
 gulp.task('dev', ['css', 'js', 'browserSync'], function () {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
-  gulp.watch('*.jpg', ['imgmin']);
+  gulp.watch(['./images/*.jpg', './images/*.png'], ['imgmin']);
   gulp.watch('./*.html', browserSync.reload);
 });
