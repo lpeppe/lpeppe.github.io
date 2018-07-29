@@ -1,15 +1,15 @@
 // Global styling for this template
-
 body {
-  @include body-font;
-  padding-top: 54px;
-  color: $gray-600;
+    @include body-font;
+    padding-top: 54px;
+    color: $gray-600;
 }
+
 @media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: $sidebar-base-width;
-  }
+    body {
+        padding-top: 0;
+        padding-left: $sidebar-base-width;
+    }
 }
 
 h1,
@@ -18,53 +18,134 @@ h3,
 h4,
 h5,
 h6 {
-  @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+    @include heading-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $gray-800;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+    font-size: 6rem;
+    line-height: 5.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+    font-size: 3.5rem;
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  @include heading-font;
-  font-size: 1.35rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    @include heading-font;
+    font-size: 1.35rem;
 }
 
 .list-social-icons {
-  a {
-    color: $gray-700;
-    &:hover {
-      color: $primary;
+    a {
+        color: $gray-700;
+        &:hover {
+            color: $primary;
+        }
+        .fa-lg {
+            font-size: 1.75rem;
+        }
     }
-    .fa-lg {
-      font-size: 1.75rem;
-    }
-  }
 }
 
 .list-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $primary;
+    font-size: 3rem;
+    .list-inline-item i {
+        &:hover {
+            color: $primary;
+        }
     }
-  }
 }
 
 span.mobileProfile {
-  max-width: 35vw;
-  max-height: 35vh;
-  // margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 20px !important;
+    max-width: 35vw;
+    max-height: 35vh; // margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 20px !important;
+}
+
+div.skill-box {
+    h3 {
+        text-align: center;
+    }
+    li.skills-item {
+        position: relative;
+        height: 35px;
+        margin: 0 0 8px 0;
+        border-radius: 15px;
+        i {
+            position: absolute;
+            font-size: 35px;
+            color: $white;
+            height: 100%;
+            background: $primary;
+            border-radius: 10px; // left: calc(30% - 17px);
+        }
+        span {
+            position: absolute; // width: 30%;
+            height: 70%;
+            background: $primary;
+            border-radius: 15px;
+            top: 15%;
+        } 
+        span.fixed {
+            background: $gray-400;
+            width: 100%;
+        }
+    }
+}
+
+[data-aos*="expand"] {
+    width: 0px;
+    transition-property: width;
+}
+
+[data-aos*="translate"] {
+    left: 0px;
+}
+
+[data-aos="expand40"].aos-animate {
+    width: 40%;
+}
+[data-aos="expand50"].aos-animate {
+    width: 50%;
+}
+[data-aos="expand60"].aos-animate {
+    width: 60%;
+}
+[data-aos="expand70"].aos-animate {
+    width: 70%;
+}
+
+[data-aos="expand80"].aos-animate {
+    width: 80%;
+}
+
+[data-aos="expand90"].aos-animate {
+    width: 90%;
+}
+
+[data-aos="translate40"].aos-animate {
+    left: calc(40% - 17px)
+}
+[data-aos="translate50"].aos-animate {
+    left: calc(50% - 17px)
+}
+[data-aos="translate60"].aos-animate {
+    left: calc(60% - 17px)
+}
+[data-aos="translate70"].aos-animate {
+    left: calc(70% - 17px)
+}
+
+[data-aos="translate80"].aos-animate {
+    left: calc(80% - 17px)
+}
+
+[data-aos="translate90"].aos-animate {
+    left: calc(90% - 17px)
 }

@@ -19,6 +19,8 @@
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="vendor/aos/aos.min.css" />
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
@@ -205,70 +207,113 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
       <div class="my-auto">
         <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicons devicons-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-css3"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-javascript"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-jquery"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-npm"></i>
-          </li>
-        </ul>
-
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="skill-box col-sm">
+              <h3>Programming languages</h3>
+              <hr>
+              <ul class="list-inline list-icons">
+                <li id="c-lang" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand50" data-aos-once="true" id="c-lang-span"></span>
+                  <i class="devicon-c-plain" data-aos="translate50" data-aos-once="true" data-aos-anchor="#c-lang-span"></i>
+                </li>
+                <li id="java" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand70" data-aos-once="true" id="java-span"></span>
+                  <i class="devicons devicons-java" data-aos="translate70" data-aos-once="true" data-aos-anchor="#java-span"></i>
+                </li>
+                <li id="javascript" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand90" data-aos-once="true" id="javascript-span"></span>
+                  <i class="devicons devicons-javascript" data-aos="translate90" data-aos-once="true" data-aos-anchor="#javascript-span"></i>
+                </li>
+                <li id="scala" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand40" data-aos-once="true" id="scala-span"></span>
+                  <i class="devicons devicons-scala" data-aos="translate40" data-aos-once="true" data-aos-anchor="#scala-span"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="skill-box col-sm">
+              <h3>Front End</h3>
+              <hr>
+              <ul class="list-inline list-icons">
+                <li id="html5" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand90" data-aos-once="true" id="html5-span"></span>
+                  <i class="devicons devicons-html5" data-aos="translate90" data-aos-once="true" data-aos-anchor="#html5-span"></i>
+                </li>
+                <li id="css3" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand70" data-aos-once="true" id="css3-span"></span>
+                  <i class="devicons devicons-css3" data-aos="translate70" data-aos-once="true" data-aos-anchor="#css3-span"></i>
+                </li>
+                <li id="sass" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand70" data-aos-once="true" id="sass-span"></span>
+                  <i class="devicons devicons-sass" data-aos="translate70" data-aos-once="true" data-aos-anchor="#sass-span"></i>
+                </li>
+                <li id="angular" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand80" data-aos-once="true" id="angular-span"></span>
+                  <i class="devicons devicons-angular" data-aos="translate80" data-aos-once="true" data-aos-anchor="#angular-span"></i>
+                </li>
+                <li id="ionic" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand90" data-aos-once="true" id="ionic-span"></span>
+                  <i class="devicons devicons-ionic" data-aos="translate90" data-aos-once="true" data-aos-anchor="#ionic-span"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="skill-box col-sm">
+              <h3>Back End</h3>
+              <hr>
+              <ul class="list-inline list-icons">
+                <li id="php" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand40" data-aos-once="true" id="php-span"></span>
+                  <i class="devicons devicons-php" data-aos="translate40" data-aos-once="true" data-aos-anchor="#php-span"></i>
+                </li>
+                <li id="nodejs" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand80" data-aos-once="true" id="nodejs-span"></span>
+                  <i class="devicons devicons-nodejs" data-aos="translate80" data-aos-once="true" data-aos-anchor="#nodejs-span"></i>
+                </li>
+                <li id="express" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand70" data-aos-once="true" id="express-span"></span>
+                  <i class="devicon-express-original" data-aos="translate70" data-aos-once="true" data-aos-anchor="#express-span"></i>
+                </li>
+                <li id="mongodb" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand60" data-aos-once="true" id="mongodb-span"></span>
+                  <i class="devicons devicons-mongodb" data-aos="translate60" data-aos-once="true" data-aos-anchor="#mongodb-span"></i>
+                </li>
+                <li id="mysql" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand70" data-aos-once="true" id="mysql-span"></span>
+                  <i class="devicons devicons-mysql" data-aos="translate70" data-aos-once="true" data-aos-anchor="#mysql-span"></i>
+                </li>
+                <li id="firebase" class="skills-item">
+                  <span class="fixed"></span>
+                  <span data-aos="expand70" data-aos-once="true" id="firebase-span"></span>
+                  <i class="devicons devicons-firebase" data-aos="translate70" data-aos-once="true" data-aos-anchor="#firebase-span"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
       <div class="my-auto">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and
-          novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring
-          chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web
-          development world.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt minima, aspernatur aut at totam aliquam, dolorem nulla
+          possimus aliquid mollitia reiciendis, fugiat repellat ea animi repudiandae? Deserunt itaque culpa debitis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt minima, aspernatur aut at totam aliquam, dolorem nulla
+          possimus aliquid mollitia reiciendis, fugiat repellat ea animi repudiandae? Deserunt itaque culpa debitis!</p>
       </div>
     </section>
   </div>
@@ -281,8 +326,8 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
+  <script src="vendor/aos/aos.min.js"></script>
   <script src="js/resume.min.js"></script>
-
 </body>
 
 </html>

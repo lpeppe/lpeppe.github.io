@@ -66,6 +66,96 @@ span.mobileProfile {
   margin-bottom: 20px !important;
 }
 
+div.skill-box h3 {
+  text-align: center;
+}
+
+div.skill-box li.skills-item {
+  position: relative;
+  height: 35px;
+  margin: 0 0 8px 0;
+  border-radius: 15px;
+}
+
+div.skill-box li.skills-item i {
+  position: absolute;
+  font-size: 35px;
+  color: #fff;
+  height: 100%;
+  background: #4983ff;
+  border-radius: 10px;
+}
+
+div.skill-box li.skills-item span {
+  position: absolute;
+  height: 70%;
+  background: #4983ff;
+  border-radius: 15px;
+  top: 15%;
+}
+
+div.skill-box li.skills-item span.fixed {
+  background: #ced4da;
+  width: 100%;
+}
+
+[data-aos*="expand"] {
+  width: 0px;
+  transition-property: width;
+}
+
+[data-aos*="translate"] {
+  left: 0px;
+}
+
+[data-aos="expand40"].aos-animate {
+  width: 40%;
+}
+
+[data-aos="expand50"].aos-animate {
+  width: 50%;
+}
+
+[data-aos="expand60"].aos-animate {
+  width: 60%;
+}
+
+[data-aos="expand70"].aos-animate {
+  width: 70%;
+}
+
+[data-aos="expand80"].aos-animate {
+  width: 80%;
+}
+
+[data-aos="expand90"].aos-animate {
+  width: 90%;
+}
+
+[data-aos="translate40"].aos-animate {
+  left: calc(40% - 17px);
+}
+
+[data-aos="translate50"].aos-animate {
+  left: calc(50% - 17px);
+}
+
+[data-aos="translate60"].aos-animate {
+  left: calc(60% - 17px);
+}
+
+[data-aos="translate70"].aos-animate {
+  left: calc(70% - 17px);
+}
+
+[data-aos="translate80"].aos-animate {
+  left: calc(80% - 17px);
+}
+
+[data-aos="translate90"].aos-animate {
+  left: calc(90% - 17px);
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
