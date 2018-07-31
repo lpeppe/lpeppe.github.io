@@ -133,6 +133,10 @@ div.project-details i {
   margin-left: 20px;
 }
 
+div.technologies {
+  margin-bottom: 40px;
+}
+
 [data-aos*="expand"] {
   width: 0px;
   transition-property: width;
