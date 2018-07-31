@@ -59,11 +59,15 @@ h2 {
   color: #4983ff;
 }
 
-span.mobileProfile {
-  max-width: 35vw;
-  max-height: 35vh;
+span.mobile-profile {
+  max-width: 9rem;
+  max-height: 9rem;
   margin-right: auto !important;
   margin-bottom: 20px !important;
+}
+
+span.mobile-profile img {
+  border: 0.3rem solid #007bff;
 }
 
 div.skill-box h3 {
@@ -97,6 +101,36 @@ div.skill-box li.skills-item span {
 div.skill-box li.skills-item span.fixed {
   background: #ced4da;
   width: 100%;
+}
+
+section#about {
+  padding-top: 3rem !important;
+}
+
+div.icon-wrapper {
+  background: #007bff;
+  border-radius: 3em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+div.icon-wrapper i {
+  font-size: 2em;
+  color: #fff;
+}
+
+div.project-details {
+  margin-bottom: 20px;
+}
+
+div.project-details i {
+  font-size: 2em;
+  margin-left: 20px;
 }
 
 [data-aos*="expand"] {

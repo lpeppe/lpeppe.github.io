@@ -61,11 +61,14 @@ h2 {
     }
 }
 
-span.mobileProfile {
-    max-width: 35vw;
-    max-height: 35vh; // margin-left: auto !important;
+span.mobile-profile {
+    max-width: 9rem;
+    max-height: 9rem; // margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 20px !important;
+    img {
+        border: .3rem solid $blue;
+    }
 }
 
 div.skill-box {
@@ -91,12 +94,40 @@ div.skill-box {
             background: $primary;
             border-radius: 15px;
             top: 15%;
-        } 
+        }
         span.fixed {
             background: $gray-400;
             width: 100%;
         }
     }
+}
+
+section#about {
+    padding-top: 3rem !important;
+}
+
+div.icon-wrapper {
+    background: $blue;
+    border-radius: 3em;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 0px;
+    i {
+        font-size: 2em;
+        color: $white;
+    }
+}
+
+div.project-details {
+    i {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+    margin-bottom: 20px;
 }
 
 [data-aos*="expand"] {
@@ -111,12 +142,15 @@ div.skill-box {
 [data-aos="expand40"].aos-animate {
     width: 40%;
 }
+
 [data-aos="expand50"].aos-animate {
     width: 50%;
 }
+
 [data-aos="expand60"].aos-animate {
     width: 60%;
 }
+
 [data-aos="expand70"].aos-animate {
     width: 70%;
 }
@@ -132,12 +166,15 @@ div.skill-box {
 [data-aos="translate40"].aos-animate {
     left: calc(40% - 17px)
 }
+
 [data-aos="translate50"].aos-animate {
     left: calc(50% - 17px)
 }
+
 [data-aos="translate60"].aos-animate {
     left: calc(60% - 17px)
 }
+
 [data-aos="translate70"].aos-animate {
     left: calc(70% - 17px)
 }
