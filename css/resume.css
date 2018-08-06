@@ -126,6 +126,7 @@ div.icon-wrapper i {
 
 div.project-details {
   margin-bottom: 20px;
+  margin-left: 0px;
 }
 
 div.project-details i {
@@ -135,6 +136,7 @@ div.project-details i {
 
 div.technologies {
   margin-bottom: 40px;
+  margin-left: 0px;
 }
 
 [data-aos*="expand"] {
