@@ -88,7 +88,13 @@ div.skill-box {
             background: $primary;
             border-radius: 10px; // left: calc(30% - 17px);
         }
-        span {
+        i.fa {
+            font-size: 0.5em;
+            line-height: 1.2;
+            padding: 4px;
+        }
+        span.aol-expand,
+        span.fixed {
             position: absolute; // width: 30%;
             height: 70%;
             background: $primary;
@@ -98,6 +104,14 @@ div.skill-box {
         span.fixed {
             background: $gray-400;
             width: 100%;
+        }
+        span.interest {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-size: 0.4em;
+            color: $gray-100;
+            line-height: 1.7;
         }
     }
 }
@@ -169,6 +183,10 @@ div.technologies {
     width: 90%;
 }
 
+[data-aos="expand100"].aos-animate {
+    width: 100%;
+}
+
 [data-aos="translate40"].aos-animate {
     left: calc(40% - 17px)
 }
@@ -191,4 +209,8 @@ div.technologies {
 
 [data-aos="translate90"].aos-animate {
     left: calc(90% - 17px)
+}
+
+[data-aos="translate100"].aos-animate {
+    left: calc(100% - 17px)
 }
